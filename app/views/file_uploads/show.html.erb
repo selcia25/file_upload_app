@@ -1,0 +1,4 @@
+<h1>File Details</h1>
+<p>This is the file that you uploaded!</p>
+<p><strong>Name:</strong> <%= @file_upload.name %></p>
+<%= image_tag @file_upload.file_data if @file_upload.file_data.attached? %>

@@ -1,0 +1,16 @@
+<%= form_with(model: @file_upload, url: file_uploads_path, multipart: true) do |form| %>
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+  
+    <div class="field">
+      <%= form.label :file_data, 'Upload File' %>
+      <%= form.file_field :file_data %>
+    </div>
+  
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+  <% end %>
+  
